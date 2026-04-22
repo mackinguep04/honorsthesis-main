@@ -3,13 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Honors Thesis - Landing Page</title>
+  <title>Honors Thesis - Landing Page with Sidebar & Mobile Menu</title>
   <link rel="stylesheet" href="home.css">
 </head>
 <body>
   <header>
-    <nav>
-      <div class="logo">Honors Thesis</div>
+    <input type="checkbox" id="mobile-menu-toggle" class="menu-toggle">
+    <label for="mobile-menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <div class="logo">Honors Thesis</div>
+    <nav class="main-nav">
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -18,46 +24,54 @@
       </ul>
     </nav>
   </header>
-  
-  <section class="carousel-section">
-    <div class="carousel-container">
-      <div class="carousel-slides">
-        <div class="carousel-slide active">
-          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Research Overview" class="slide-image">
+
+  <main class="page-container">
+
+    <aside class="left-sidebar">
+<div class="left-sidebar-grid">
+  <img src="circle.svg" alt="Thesis Navigation Circle">
+  <img src="circle.svg" alt="Thesis Navigation Circle">
+  <img src="circle.svg" alt="Thesis Navigation Circle">
+</div>    
+    </aside>
+<div class="main-area">
+      <section class="carousel-section">
+        <div class="carousel-container">
+          <div class="carousel-slides">
+            <div class="carousel-slide active">
+              <img src="https://64.media.tumblr.com/526613e4adc08c4ae47c70db808ba3bd/tumblr_inline_p7g3ftTf2H1qid2nw_250.gifv" alt="Research Overview">
+            </div>
+            <div class="carousel-slide">
+              <img src="https://64.media.tumblr.com/526613e4adc08c4ae47c70db808ba3bd/tumblr_inline_p7g3ftTf2H1qid2nw_250.gifv" alt="Data Analysis">
+            </div>
+            <div class="carousel-slide">
+              <img src="https://64.media.tumblr.com/526613e4adc08c4ae47c70db808ba3bd/tumblr_inline_p7g3ftTf2H1qid2nw_250.gifv" alt="Key Findings">
+            </div>
+            <div class="carousel-slide">
+              <img src="https://64.media.tumblr.com/526613e4adc08c4ae47c70db808ba3bd/tumblr_inline_p7g3ftTf2H1qid2nw_250.gifv" alt="Applications">
+            </div>
+            <div class="carousel-slide">
+              <img src="https://64.media.tumblr.com/526613e4adc08c4ae47c70db808ba3bd/tumblr_inline_p7g3ftTf2H1qid2nw_250.gifv" alt="Conclusion">
+            </div>
+          </div>
         </div>
-        <div class="carousel-slide">
-          <img src="https://images.unsplash.com/photo-1551288049-b1b463de7202?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Data Analysis" class="slide-image">
-        </div>
-        <div class="carousel-slide">
-          <img src="https://images.unsplash.com/photo-1576091160399-1b6b66caa5a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Key Findings" class="slide-image">
-        </div>
-        <div class="carousel-slide">
-          <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Applications" class="slide-image">
-        </div>
-        <div class="carousel-slide">
-          <img src="https://images.unsplash.com/photo-1516321310764-9f3c9619b6ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Conclusion" class="slide-image">
-        </div>
-      </div>
-      <div class="carousel-dots">
-        <span class="dot active" data-slide="0"></span>
-        <span class="dot" data-slide="1"></span>
-        <span class="dot" data-slide="2"></span>
-        <span class="dot" data-slide="3"></span>
-        <span class="dot" data-slide="4"></span>
-      </div>
+      </section>
+
+      <section class="hero">
+        <h1>Welcome to My Honors Thesis</h1>
+        <p>Exploring innovative research in computer science. Dive into the details and discover groundbreaking insights.</p>
+        <a href="#thesis" class="cta-button">Explore Thesis</a>
+
+      </section>
+                      <img src="crosslines.svg" alt="Thesis Navigation Circle">
+
     </div>
-  </section>
 
-  <section class="hero">
-    <h1>Welcome to My Honors Thesis</h1>
-    <p>Exploring innovative research in computer science. Dive into the details and discover groundbreaking insights.</p>
-    <a href="#thesis" class="cta-button">Explore Thesis</a>
-  </section>
-
-
+  </main>
 
   <footer>
     <p>&copy; 2024 Honors Thesis. All rights reserved.</p>
   </footer>
 </body>
 </html>
+
