@@ -1,21 +1,20 @@
-# Make Screen Fully Adaptive / Responsive
+# Home Page Redesign TODO
 
-## Steps:
-- [x] Step 1: Update home.html - Remove fixed width/height from SVG imgs in sidebar
-- [x] Step 2: Update home.css with comprehensive responsive improvements:
-  * Global image/object styles ✓
-  * Responsive sidebar with grid for SVGs ✓
-  * Enhanced carousel (aspect-ratio, mobile stacking/single view option) ✓
-  * Additional breakpoints (1024px tablet, 360px tiny phones) ✓
-  * Relative units, prevent overflow ✓
-- [x] Step 3: Test responsiveness
-- [x] Step 4: Complete
+## Plan
+Redesign home.html/home.css to mirror KiwiCo Education Programs layout with cottagecore/rustic farm aesthetic.
 
-# Build Flexbox Layout with Screen Responsiveness for thesis.html
+## Colors
+- #88a751 (sage green)
+- #a4502f (rust terracotta)
+- #b2d07d (light moss green)
+- #f6e8cd (cream/warm beige)
+- #f0eee4 (off-white linen)
+- #6c4d2e (dark brown/rustic wood)
 
-## Plan:
-- [x] Step 1: Create thesis.html with semantic flexbox structure (header, nav sidebar, main content, footer)
-- [x] Step 2: Create thesis.css with flexbox layout and responsive breakpoints
-- [x] Step 3: Ensure visual consistency with home.html (colors, typography)
-- [x] Step 4: Add mobile hamburger menu and collapsible sidebar
-- [x] Step 5: Test responsiveness across breakpoints
+## Steps
+- [x] Create TODO.md
+- [ ] Rewrite home.html with new layout structure
+- [ ] Rewrite home.css with cottagecore/rustic styling
+- [ ] Test responsiveness and interactivity
+- [ ] Verify navigation links to thesis.html, process.html, research.html
+
