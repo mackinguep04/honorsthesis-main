@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honors Thesis - Research Document</title>
+  <link rel="stylesheet" href="thesis.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <input type="checkbox" id="mobile-menu-toggle" class="menu-toggle">
+      <label for="mobile-menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <div class="logo">Honors Thesis</div>
+      <div class="main-nav">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="#abstract">Abstract</a></li>
+          <li><a href="#methodology">Methodology</a></li>
+          <li><a href="#results">Results</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-container">
+    <aside class="sidebar">
+      <h2>Thesis Navigation</h2>
+      <ul>
+        <li><a href="#abstract">Abstract</a></li>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#literature">Literature Review</a></li>
+        <li><a href="#methodology">Methodology</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#discussion">Discussion</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+        <li><a href="#references">References</a></li>
+      </ul>
+    </aside>
+
+    <article class="main-content">
+      <section class="content-section" id="abstract">
+        <h1>Exploring Adaptive Algorithms in Distributed Systems</h1>
+        <div class="abstract-box">
+          <p><strong>Abstract:</strong> This thesis investigates the design and implementation of adaptive algorithms within distributed computing environments. By analyzing load balancing strategies and fault tolerance mechanisms, we propose a novel framework that dynamically adjusts to network conditions, improving overall system efficiency by an average of 34% compared to static approaches.</p>
+        </div>
+      </section>
+
+      <section class="content-section" id="introduction">
+        <h2>1. Introduction</h2>
+        <p>Distributed systems have become the backbone of modern computing infrastructure, powering everything from cloud services to peer-to-peer networks. As these systems scale in size and complexity, the need for adaptive algorithms that can respond to changing conditions in real-time has grown increasingly critical.</p>
+        <p>This research addresses the fundamental challenge of maintaining optimal performance in distributed environments where node availability, network latency, and workload patterns are inherently unpredictable. Traditional static algorithms often fail to adapt to these dynamic conditions, resulting in suboptimal resource utilization and degraded user experience.</p>
+      </section>
+
+      <section class="content-section" id="literature">
+        <h2>2. Literature Review</h2>
+        <p>Previous work in distributed systems has explored various approaches to load balancing and fault tolerance. Classical algorithms such as Round-Robin and Least Connections provide baseline performance but lack adaptability. More recent research has introduced machine learning techniques to predict workload patterns, though these approaches often require significant computational overhead.</p>
+        <p>Our review of existing literature reveals a gap in lightweight adaptive mechanisms that can operate effectively at scale without excessive resource consumption. This thesis aims to fill that gap by proposing a hybrid approach that combines statistical analysis with minimal-overhead decision making.</p>
+      </section>
+
+      <section class="content-section" id="methodology">
+        <h2>3. Methodology</h2>
+        <p>The research methodology employed in this thesis consists of three primary phases: system modeling, algorithm design, and empirical evaluation. Each phase was carefully structured to ensure reproducibility and validity of results.</p>
+        <h3>3.1 System Modeling</h3>
+        <p>We developed a discrete-event simulation framework using Python and SimPy to model distributed system behavior under various load conditions. The simulation environment allowed us to test algorithm performance across thousands of scenarios without requiring physical infrastructure.</p>
+        <h3>3.2 Algorithm Design</h3>
+        <p>The proposed adaptive algorithm, which we term "Dynamic Weighted Distribution" (DWD), continuously monitors node performance metrics including response time, queue length, and error rates. These metrics are combined using a weighted scoring function that adjusts weights based on historical performance data.</p>
+        <div class="figure">
+          <img src="https://64.media.tumblr.com/526613e4adc08c4ae47c70db808ba3bd/tumblr_inline_p7g3ftTf2H1qid2nw_250.gifv" alt="Algorithm Flow Diagram">
+          <p class="figure-caption">Figure 1: High-level architecture of the DWD algorithm showing feedback loops and decision points.</p>
+        </div>
+      </section>
+
+      <section class="content-section" id="results">
+        <h2>4. Results</h2>
+        <p>Empirical evaluation of the DWD algorithm was conducted across three distinct test environments: a simulated data center with 500 nodes, a cloud-based Kubernetes cluster, and a small-scale IoT network. In all environments, DWD demonstrated significant improvements over baseline algorithms.</p>
+        <ul>
+          <li><strong>Average latency reduction:</strong> 28% compared to Round-Robin</li>
+          <li><strong>Fault recovery time:</strong> 42% faster than static failover mechanisms</li>
+          <li><strong>Resource utilization:</strong> 34% improvement in CPU and memory efficiency</li>
+          <li><strong>Throughput increase:</strong> 19% under high-load conditions</li>
+        </ul>
+        <p>These results suggest that adaptive algorithms can provide substantial benefits in real-world distributed systems without introducing unacceptable complexity or overhead.</p>
+      </section>
+
+      <section class="content-section" id="discussion">
+        <h2>5. Discussion</h2>
+        <p>The findings of this thesis support the hypothesis that lightweight adaptive mechanisms can significantly improve distributed system performance. However, several limitations should be acknowledged. The DWD algorithm currently assumes homogeneous node capabilities, and extending it to heterogeneous environments remains future work.</p>
+        <p>Additionally, while the simulation results are promising, long-term deployment studies would be necessary to fully validate the algorithm's effectiveness in production environments. The trade-off between adaptation frequency and stability also warrants further investigation.</p>
+      </section>
+
+      <section class="content-section" id="conclusion">
+        <h2>6. Conclusion</h2>
+        <p>This thesis has presented a novel adaptive algorithm for distributed systems that dynamically balances load and manages faults based on real-time performance metrics. Through comprehensive simulation and empirical testing, we have demonstrated that the proposed approach outperforms traditional static algorithms across multiple key performance indicators.</p>
+        <p>The work contributes to the broader field of distributed computing by providing a practical, lightweight solution to the challenge of system adaptation. Future research directions include extending the algorithm to support heterogeneous environments, integrating machine learning for predictive adaptation, and conducting large-scale production deployment studies.</p>
+      </section>
+
+      <section class="content-section" id="references">
+        <h2>References</h2>
+        <div class="references">
+          <p>[1] Tanenbaum, A. S., & Van Steen, M. (2007). <em>Distributed Systems: Principles and Paradigms.</em> Pearson Education.</p>
+          <p>[2] Coulouris, G., Dollimore, J., Kindberg, T., & Blair, G. (2011). <em>Distributed Systems: Concepts and Design.</em> Addison-Wesley.</p>
+          <p>[3] Mitzenmacher, M. (2001). The Power of Two Choices in Randomized Load Balancing. <em>IEEE Transactions on Parallel and Distributed Systems.</em></p>
+          <p>[4] Dean, J., & Barroso, L. A. (2013). The Tail at Scale. <em>Communications of the ACM.</em></p>
+          <p>[5] Zhang, Q., Zhu, X., Zheng, Z., Lyu, R., & Yang, Y. (2016). Deep Learning in Cloud Computing: A Review. <em>IEEE Communications Surveys & Tutorials.</em></p>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Honors Thesis. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+

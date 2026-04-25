@@ -10,3 +10,12 @@
   * Relative units, prevent overflow ✓
 - [x] Step 3: Test responsiveness
 - [x] Step 4: Complete
+
+# Build Flexbox Layout with Screen Responsiveness for thesis.html
+
+## Plan:
+- [x] Step 1: Create thesis.html with semantic flexbox structure (header, nav sidebar, main content, footer)
+- [x] Step 2: Create thesis.css with flexbox layout and responsive breakpoints
+- [x] Step 3: Ensure visual consistency with home.html (colors, typography)
+- [x] Step 4: Add mobile hamburger menu and collapsible sidebar
+- [x] Step 5: Test responsiveness across breakpoints
