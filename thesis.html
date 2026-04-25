@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Honors Thesis - Research Document</title>
+  <title>Honors Thesis - Playset Design Research</title>
   <link rel="stylesheet" href="thesis.css">
 </head>
 <body>
@@ -15,102 +15,280 @@
         <span></span>
         <span></span>
       </label>
-      <div class="logo">Honors Thesis</div>
+      <div class="logo">Honors<span>Thesis</span></div>
       <div class="main-nav">
         <ul>
           <li><a href="home.html">Home</a></li>
-          <li><a href="#abstract">Abstract</a></li>
-          <li><a href="#methodology">Methodology</a></li>
-          <li><a href="#results">Results</a></li>
+          <li><a href="#painpoints">Pain Points</a></li>
+          <li><a href="#problem">The Problem</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#materials">Materials</a></li>
+          <li><a href="#conclusion" class="nav-cta">Conclusion</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
-  <main class="page-container">
-    <aside class="sidebar">
-      <h2>Thesis Navigation</h2>
-      <ul>
-        <li><a href="#abstract">Abstract</a></li>
-        <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#literature">Literature Review</a></li>
-        <li><a href="#methodology">Methodology</a></li>
-        <li><a href="#results">Results</a></li>
-        <li><a href="#discussion">Discussion</a></li>
-        <li><a href="#conclusion">Conclusion</a></li>
-        <li><a href="#references">References</a></li>
-      </ul>
-    </aside>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-tag">Senior Design Research</div>
+      <h1>User Pain Points in <span class="accent">Playset Design</span> &amp; Classroom Environment</h1>
+      <p class="hero-subtitle">Investigating the critical gaps in existing playset design and classroom environments for preschool and therapy settings through observational research and stakeholder interviews.</p>
+      <a href="#abstract" class="cta-button">Read the research &rarr;</a>
+    </div>
+  </section>
 
-    <article class="main-content">
-      <section class="content-section" id="abstract">
-        <h1>Exploring Adaptive Algorithms in Distributed Systems</h1>
-        <div class="abstract-box">
-          <p><strong>Abstract:</strong> This thesis investigates the design and implementation of adaptive algorithms within distributed computing environments. By analyzing load balancing strategies and fault tolerance mechanisms, we propose a novel framework that dynamically adjusts to network conditions, improving overall system efficiency by an average of 34% compared to static approaches.</p>
+  <section class="abstract-section" id="abstract">
+    <div class="container">
+      <div class="section-header">
+        <h2>Research Abstract</h2>
+      </div>
+      <div class="abstract-box">
+        <p>This thesis investigates the critical pain points in existing playset design and classroom environments for preschool and therapy settings. Through observational research and stakeholder interviews, we identify four core areas of concern: frustrations with social and cooperative play, lack of open-ended structure, safety and durability issues, and gaps in inclusivity for children with disabilities. This research synthesizes findings to inform the design of flexible, durable, and inclusive play systems that support diverse developmental needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro-section" id="introduction">
+    <div class="container">
+      <div class="section-header">
+        <h2>Introduction</h2>
+      </div>
+      <p>Pretend play is a cornerstone of early childhood development, fostering creativity, social skills, language acquisition, and emotional regulation. The physical environments and playsets that support this type of play are therefore critical to children's growth. However, current offerings on the market often fail to meet the complex and diverse needs of children, educators, and therapists.</p>
+      <p>This research synthesizes observational data, preschool director feedback, and clinical notes to identify systemic failures in playset design. Our findings reveal that the majority of commercially available pretend play furniture is theme-locked, non-inclusive, and developmentally limiting. This thesis maps these pain points across four categories and proposes design principles for next-generation play systems.</p>
+    </div>
+  </section>
+
+  <section class="pain-points" id="painpoints">
+    <div class="container">
+      <div class="section-header">
+        <h2>Four Core Pain Points</h2>
+        <p>The following areas represent the most significant barriers to effective play in current classroom and therapy environments.</p>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon yellow">👥</div>
+          <h3>Social &amp; Cooperative Play</h3>
+          <p>Children frequently engage in parallel play rather than true cooperative play. Even in shared activities, they focus on individual projects.</p>
+          <ul>
+            <li>Difficulty shifting from parallel to social play</li>
+            <li>Conflict resolution issues with sharing</li>
+            <li>Limited capacity at play centers</li>
+          </ul>
         </div>
-      </section>
-
-      <section class="content-section" id="introduction">
-        <h2>1. Introduction</h2>
-        <p>Distributed systems have become the backbone of modern computing infrastructure, powering everything from cloud services to peer-to-peer networks. As these systems scale in size and complexity, the need for adaptive algorithms that can respond to changing conditions in real-time has grown increasingly critical.</p>
-        <p>This research addresses the fundamental challenge of maintaining optimal performance in distributed environments where node availability, network latency, and workload patterns are inherently unpredictable. Traditional static algorithms often fail to adapt to these dynamic conditions, resulting in suboptimal resource utilization and degraded user experience.</p>
-      </section>
-
-      <section class="content-section" id="literature">
-        <h2>2. Literature Review</h2>
-        <p>Previous work in distributed systems has explored various approaches to load balancing and fault tolerance. Classical algorithms such as Round-Robin and Least Connections provide baseline performance but lack adaptability. More recent research has introduced machine learning techniques to predict workload patterns, though these approaches often require significant computational overhead.</p>
-        <p>Our review of existing literature reveals a gap in lightweight adaptive mechanisms that can operate effectively at scale without excessive resource consumption. This thesis aims to fill that gap by proposing a hybrid approach that combines statistical analysis with minimal-overhead decision making.</p>
-      </section>
-
-      <section class="content-section" id="methodology">
-        <h2>3. Methodology</h2>
-        <p>The research methodology employed in this thesis consists of three primary phases: system modeling, algorithm design, and empirical evaluation. Each phase was carefully structured to ensure reproducibility and validity of results.</p>
-        <h3>3.1 System Modeling</h3>
-        <p>We developed a discrete-event simulation framework using Python and SimPy to model distributed system behavior under various load conditions. The simulation environment allowed us to test algorithm performance across thousands of scenarios without requiring physical infrastructure.</p>
-        <h3>3.2 Algorithm Design</h3>
-        <p>The proposed adaptive algorithm, which we term "Dynamic Weighted Distribution" (DWD), continuously monitors node performance metrics including response time, queue length, and error rates. These metrics are combined using a weighted scoring function that adjusts weights based on historical performance data.</p>
-        <div class="figure">
-          <img src="https://64.media.tumblr.com/526613e4adc08c4ae47c70db808ba3bd/tumblr_inline_p7g3ftTf2H1qid2nw_250.gifv" alt="Algorithm Flow Diagram">
-          <p class="figure-caption">Figure 1: High-level architecture of the DWD algorithm showing feedback loops and decision points.</p>
+        <div class="card">
+          <div class="card-icon green">🎨</div>
+          <h3>Open-Ended Structure</h3>
+          <p>Children need playsets that inspire creativity and allow them to define the rules and purpose of play.</p>
+          <ul>
+            <li>Themes lose engagement after two weeks</li>
+            <li>Some themes exclude certain genders</li>
+            <li>Lack of child input in design</li>
+          </ul>
         </div>
-      </section>
-
-      <section class="content-section" id="results">
-        <h2>4. Results</h2>
-        <p>Empirical evaluation of the DWD algorithm was conducted across three distinct test environments: a simulated data center with 500 nodes, a cloud-based Kubernetes cluster, and a small-scale IoT network. In all environments, DWD demonstrated significant improvements over baseline algorithms.</p>
-        <ul>
-          <li><strong>Average latency reduction:</strong> 28% compared to Round-Robin</li>
-          <li><strong>Fault recovery time:</strong> 42% faster than static failover mechanisms</li>
-          <li><strong>Resource utilization:</strong> 34% improvement in CPU and memory efficiency</li>
-          <li><strong>Throughput increase:</strong> 19% under high-load conditions</li>
-        </ul>
-        <p>These results suggest that adaptive algorithms can provide substantial benefits in real-world distributed systems without introducing unacceptable complexity or overhead.</p>
-      </section>
-
-      <section class="content-section" id="discussion">
-        <h2>5. Discussion</h2>
-        <p>The findings of this thesis support the hypothesis that lightweight adaptive mechanisms can significantly improve distributed system performance. However, several limitations should be acknowledged. The DWD algorithm currently assumes homogeneous node capabilities, and extending it to heterogeneous environments remains future work.</p>
-        <p>Additionally, while the simulation results are promising, long-term deployment studies would be necessary to fully validate the algorithm's effectiveness in production environments. The trade-off between adaptation frequency and stability also warrants further investigation.</p>
-      </section>
-
-      <section class="content-section" id="conclusion">
-        <h2>6. Conclusion</h2>
-        <p>This thesis has presented a novel adaptive algorithm for distributed systems that dynamically balances load and manages faults based on real-time performance metrics. Through comprehensive simulation and empirical testing, we have demonstrated that the proposed approach outperforms traditional static algorithms across multiple key performance indicators.</p>
-        <p>The work contributes to the broader field of distributed computing by providing a practical, lightweight solution to the challenge of system adaptation. Future research directions include extending the algorithm to support heterogeneous environments, integrating machine learning for predictive adaptation, and conducting large-scale production deployment studies.</p>
-      </section>
-
-      <section class="content-section" id="references">
-        <h2>References</h2>
-        <div class="references">
-          <p>[1] Tanenbaum, A. S., & Van Steen, M. (2007). <em>Distributed Systems: Principles and Paradigms.</em> Pearson Education.</p>
-          <p>[2] Coulouris, G., Dollimore, J., Kindberg, T., & Blair, G. (2011). <em>Distributed Systems: Concepts and Design.</em> Addison-Wesley.</p>
-          <p>[3] Mitzenmacher, M. (2001). The Power of Two Choices in Randomized Load Balancing. <em>IEEE Transactions on Parallel and Distributed Systems.</em></p>
-          <p>[4] Dean, J., & Barroso, L. A. (2013). The Tail at Scale. <em>Communications of the ACM.</em></p>
-          <p>[5] Zhang, Q., Zhu, X., Zheng, Z., Lyu, R., & Yang, Y. (2016). Deep Learning in Cloud Computing: A Review. <em>IEEE Communications Surveys & Tutorials.</em></p>
+        <div class="card">
+          <div class="card-icon blue">🛡️</div>
+          <h3>Safety &amp; Durability</h3>
+          <p>Practical issues with the physical environment compromise play quality and require frequent teacher intervention.</p>
+          <ul>
+            <li>Unsafe building and stacking</li>
+            <li>Durability and maintenance concerns</li>
+            <li>Need for secure climbing structures</li>
+          </ul>
         </div>
-      </section>
-    </article>
-  </main>
+        <div class="card">
+          <div class="card-icon orange">♿</div>
+          <h3>Inclusivity &amp; Developmental Gaps</h3>
+          <p>The current environment struggles to accommodate all children's needs, especially those with medical conditions or disabilities.</p>
+          <ul>
+            <li>Lack of inclusivity for disabilities</li>
+            <li>Need for medical/adaptive play</li>
+            <li>Sensory processing needs unmet</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="problem-statement" id="problem">
+    <div class="container">
+      <div class="section-header">
+        <h2>The Problem</h2>
+        <p>The current market for pretend play furniture suffers from systemic design failures that limit child development, create exclusion, and frustrate educators and therapists.</p>
+      </div>
+      <div class="problem-list">
+        <div class="problem-item">
+          <div class="problem-check">✓</div>
+          <p><strong>Theme-locked design:</strong> A toy kitchen is only a kitchen. This rigid functionality limits imagination, encourages narrow and often gendered roles, and makes classrooms cluttered with bulky, single-purpose sets.</p>
+        </div>
+        <div class="problem-item">
+          <div class="problem-check">✓</div>
+          <p><strong>Lack of inclusivity:</strong> Many playsets are the wrong height for wheelchair users, feature hard-to-grip pieces, and provide weak sensory feedback for children with vision or motor challenges.</p>
+        </div>
+        <div class="problem-item">
+          <div class="problem-check">✓</div>
+          <p><strong>Inflexible role-taking:</strong> Children may insist on being the lead character or only the character they prefer, causing conflict when roles are predetermined by the toy.</p>
+        </div>
+        <div class="problem-item">
+          <div class="problem-check">✓</div>
+          <p><strong>Potential exclusion:</strong> Lack of cooperation or difficulty sharing ideas can lead to one child excluding another, causing distress and terminating play.</p>
+        </div>
+        <div class="problem-item">
+          <div class="problem-check">✓</div>
+          <p><strong>Reduced symbolic thinking:</strong> When a toy is designed to look exactly like a specific thing, a child is less likely to use it as anything else, diminishing creative and symbolic play.</p>
+        </div>
+        <div class="problem-item">
+          <div class="problem-check">✓</div>
+          <p><strong>Prescripted play:</strong> Toys and sets with established lights and sounds tell the child how to play, removing agency and exploration.</p>
+        </div>
+        <div class="problem-item">
+          <div class="problem-check">✓</div>
+          <p><strong>Clutter and overwhelm:</strong> Playsets often come with dozens of tiny, specific pieces that are hard to organize and can cause children to shut down rather than engage.</p>
+        </div>
+        <div class="problem-item">
+          <div class="problem-check">✓</div>
+          <p><strong>Choking hazards:</strong> Small parts present safety risks, particularly in mixed-age environments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="solutions" id="solutions">
+    <div class="container">
+      <div class="section-header">
+        <h2>Potential Solutions</h2>
+        <p>Based on the identified pain points, the following design principles guide the development of next-generation play systems.</p>
+      </div>
+      <div class="solution-cards">
+        <div class="solution-card">
+          <div class="card-icon green">🎭</div>
+          <h3>Gender Neutrality</h3>
+          <p>Incorporate natural tones and avoid color schemes or themes that signal exclusivity. Neutral palettes encourage all children to engage without perceived gender barriers.</p>
+        </div>
+        <div class="solution-card">
+          <div class="card-icon blue">🔧</div>
+          <h3>Theme Variety &amp; Modularity</h3>
+          <p>Use undefined shapes that can combine with other pieces. Implement hinged panels or connecting pieces that allow the playset to expand or contract based on the scenario.</p>
+        </div>
+        <div class="solution-card">
+          <div class="card-icon yellow">📦</div>
+          <h3>Integrated Storage</h3>
+          <p>Integrate open shelves, hooks, or cubbies within the playset itself to store unused parts and props. This reduces clutter, teaches organization, and keeps the play area manageable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="materials" id="materials">
+    <div class="container">
+      <div class="section-header">
+        <h2>Recommended Materials</h2>
+        <p>The selection of materials is critical to addressing the pain points of safety, durability, inclusivity, and sustainability.</p>
+      </div>
+      
+      <div class="table-container">
+        <h3>Structural Base Materials</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Material</th>
+                <th>Properties</th>
+                <th>Pain Point Addressed</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Natural Woods</strong><br><small>Birch/Maple Plywood, Solid Hardwood</small></td>
+                <td>Sturdy, less likely to break or tip than thin plastic</td>
+                <td>Safety, Open-ended design, Durability</td>
+              </tr>
+              <tr>
+                <td><strong>Natural Fabrics</strong><br><small>Nylon, Cotton, Canvas</small></td>
+                <td>Soft, flexible, easy to clean, washable</td>
+                <td>Sensory needs, Durability</td>
+              </tr>
+              <tr>
+                <td><strong>Clear Acrylic / Plexiglass</strong></td>
+                <td>Safe alternative to glass. Can be drawn on with dry-erase markers.</td>
+                <td>Safety, Open-ended design</td>
+              </tr>
+              <tr>
+                <td><strong>Bioplastics</strong><br><small>PLA, PHA</small></td>
+                <td>Made from renewable sources such as sugarcane and cornstarch</td>
+                <td>Sustainability, Safety</td>
+              </tr>
+              <tr>
+                <td><strong>Reclaimed Rubberwood</strong></td>
+                <td>Hardwood byproduct of rubber production, sustainable and durable</td>
+                <td>Durability, Sustainability</td>
+              </tr>
+              <tr>
+                <td><strong>Nontoxic Plastics</strong><br><small>ABS</small></td>
+                <td>Complies with ASTM F963. High durability and impact resistance.</td>
+                <td>Safety, Durability</td>
+              </tr>
+              <tr>
+                <td><strong>Recyclable Plastics</strong><br><small>PET, PE</small></td>
+                <td>Common in packaging, plush toy stuffing, and squeeze toys</td>
+                <td>Sustainability, Versatility</td>
+              </tr>
+              <tr>
+                <td><strong>Biodegradable Plastics</strong><br><small>PLA, PHA</small></td>
+                <td>Made from cornstarch, sugarcane, and other renewable sources</td>
+                <td>Sustainability, Customizability</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="table-container">
+        <h3>Prop Materials</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Material</th>
+                <th>Properties</th>
+                <th>Pain Point Addressed</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Biodegradable Plastics</strong><br><small>PLA</small></td>
+                <td>Made from cornstarch and sugarcane, other renewable sources</td>
+                <td>Sustainability, Lightweight props</td>
+              </tr>
+              <tr>
+                <td><strong>Natural Fabrics</strong><br><small>Cotton, Canvas</small></td>
+                <td>Soft, washable, sensory-friendly</td>
+                <td>Sensory needs, Durability</td>
+              </tr>
+              <tr>
+                <td><strong>Silicone</strong></td>
+                <td>Non-toxic, flexible, easy to sterilize</td>
+                <td>Safety, Medical play props</td>
+              </tr>
+              <tr>
+                <td><strong>FSC-Certified Cardboard</strong></td>
+                <td>Lightweight, customizable, recyclable</td>
+                <td>Open-ended design, Sustainability</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="conclusion-cta" id="conclusion">
+    <div class="container">
+      <h2>Designing for Every Child</h2>
+      <p>This thesis has identified and categorized the critical pain points in existing playset design and classroom environments. Flexible, modular, and inclusive play systems—constructed from durable, sustainable materials—offer a path forward where all children can engage, imagine, and grow together.</p>
+      <a href="#abstract" class="cta-button">Back to Top &uarr;</a>
+    </div>
+  </section>
 
   <footer>
     <p>&copy; 2024 Honors Thesis. All rights reserved.</p>
