@@ -1,20 +1,14 @@
-# Home Page Redesign TODO
+# Cloud Shape Containers — TODO
 
 ## Plan
-Redesign home.html/home.css to mirror KiwiCo Education Programs layout with cottagecore/rustic farm aesthetic.
-
-## Colors
-- #88a751 (sage green)
-- #a4502f (rust terracotta)
-- #b2d07d (light moss green)
-- #f6e8cd (cream/warm beige)
-- #f0eee4 (off-white linen)
-- #6c4d2e (dark brown/rustic wood)
+Add organic cloud-shaped `border-radius` (blob shapes) to key container/card elements across all 4 CSS files while preserving existing styling.
 
 ## Steps
-- [x] Create TODO.md
-- [ ] Rewrite home.html with new layout structure
-- [ ] Rewrite home.css with cottagecore/rustic styling
-- [ ] Test responsiveness and interactivity
-- [ ] Verify navigation links to thesis.html, process.html, research.html
+- [x] Read all CSS and HTML files to understand structure
+- [x] Create TODO.md (this file)
+- [x] Update `home.css` — cloud shapes for `.step-image-wrapper`, `.featured-card`, `.highlight-card`, `.faq-item`, `.cta-banner`
+- [x] Update `process.css` — cloud shapes for `.step-image`, `.gallery-item`
+- [x] Update `research.css` — cloud shapes for `.abstract-box`, `.card`, `.problem-item`, `.solution-card`
+- [x] Update `thesis.css` — cloud shapes for `.abstract-box`, `.card`, `.problem-item`, `.solution-card`, `.table-container`
+- [x] Verify edits and mark complete
 
