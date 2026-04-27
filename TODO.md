@@ -1,14 +1,13 @@
-# Cloud Shape Containers — TODO
+# SVG Integration Progress
 
-## Plan
-Add organic cloud-shaped `border-radius` (blob shapes) to key container/card elements across all 4 CSS files while preserving existing styling.
+## Task: Incorporate leafyellow.svg, leaforange.svg, apple.svg, mushroom.svg, mushrooms.svg throughout all pages
 
-## Steps
-- [x] Read all CSS and HTML files to understand structure
-- [x] Create TODO.md (this file)
-- [x] Update `home.css` — cloud shapes for `.step-image-wrapper`, `.featured-card`, `.highlight-card`, `.faq-item`, `.cta-banner`
-- [x] Update `process.css` — cloud shapes for `.step-image`, `.gallery-item`
-- [x] Update `research.css` — cloud shapes for `.abstract-box`, `.card`, `.problem-item`, `.solution-card`
-- [x] Update `thesis.css` — cloud shapes for `.abstract-box`, `.card`, `.problem-item`, `.solution-card`, `.table-container`
-- [x] Verify edits and mark complete
+### Status: Changes undone — all files reverted to original state
+
+### Steps:
+- [ ] 1. Update home.html + home.css with SVG decorations
+- [ ] 2. Update thesis.html + thesis.css with SVG decorations and icon replacements
+- [ ] 3. Update process.html + process.css with SVG decorations
+- [ ] 4. Update research.html + research.css with SVG decorations and icon replacements
+- [ ] 5. Test all pages for visual consistency and mobile responsiveness
 

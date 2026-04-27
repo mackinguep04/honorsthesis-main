@@ -563,13 +563,29 @@ section {
 .solution-card ul {
   text-align: left;
   margin-top: 1rem;
-  padding-left: 1.5rem;
+  padding-left: 0;
   color: var(--text-light);
   font-size: 0.95rem;
+  list-style: none;
 }
 
 .solution-card li {
+  position: relative;
+  padding-left: 1.5rem;
   margin-bottom: 0.5rem;
+}
+
+.solution-card li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.35rem;
+  width: 14px;
+  height: 14px;
+  background-image: url('acorn.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* ===== Conclusion CTA ===== */
