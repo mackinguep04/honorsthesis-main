@@ -7,6 +7,17 @@
   <link rel="stylesheet" href="home.css">
 </head>
 <body>
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loading-screen">
+    <div class="loading-inner">
+      <img src="leafyellow.svg" alt="" class="loading-leaf" width="48" height="48">
+      <p class="loading-text">Sprout to Plate</p>
+      <div class="loading-bar">
+        <div class="loading-progress"></div>
+      </div>
+    </div>
+  </div>
+
   <header class="site-header">
     <div class="header-inner">
       <input type="checkbox" id="mobile-menu-toggle" class="menu-toggle">
@@ -15,7 +26,7 @@
         <span></span>
         <span></span>
       </label>
-      <a href="home.html" class="logo">Sprout to Plate</span></a>
+<a href="home.html" class="logo">Sprout to Plate</a>
       <nav class="main-nav">
         <ul>
           <li><a href="home.html">Home</a></li>
@@ -33,7 +44,7 @@
       <div class="hero-container">
         <div class="hero-content">
           <h1>Designing Inclusive Play<span class="dot">.</span></h1>
-          <p class="hero-subtitle">An honors thesis exploring <strong>modular, gender-neutral playsets</strong> for preschool and therapy settings through hands-on research and iterative design.</p>
+          <p class="hero-subtitle">An honors thesis exploring <strong>modular, gender-neutral playsets</strong> for preschool settings through hands-on research and iterative design.</p>
           <ul class="hero-list">
             <li>
               <img src="acorn.svg" class="bullet-icon" alt="" width="16" height="16">
@@ -43,10 +54,7 @@
               <img src="acorn.svg" class="bullet-icon" alt="" width="16" height="16">
               Iterative prototyping &amp; material testing
             </li>
-            <li>
-              <img src="acorn.svg" class="bullet-icon" alt="" width="16" height="16">
-              User testing with children ages 3–5
-            </li>
+
             <li>
               <img src="acorn.svg" class="bullet-icon" alt="" width="16" height="16">
               Final modular, inclusive playset design
@@ -87,7 +95,6 @@
             </div>
           </li>
           <li class="step-connector">
-            <img src="mushroom.svg" alt="" width="28" height="28">
           </li>
           <li class="step-item">
             <div class="step-image-wrapper">
@@ -95,11 +102,10 @@
             </div>
             <div class="step-text">
               <h4>Ideation &amp; Concepts</h4>
-              <p>50+ sketches, mood boards, and modular geometry explorations with neutral palettes.</p>
+              <p>Sketches, mood boards, and modular geometry explorations with neutral palettes.</p>
             </div>
           </li>
           <li class="step-connector">
-            <img src="apple.svg" alt="" width="28" height="28">
           </li>
           <li class="step-item">
             <div class="step-image-wrapper">
@@ -107,11 +113,10 @@
             </div>
             <div class="step-text">
               <h4>Prototyping &amp; Testing</h4>
-              <p>Foam and cardboard prototypes tested in classrooms with 20+ children across three rounds.</p>
+              <p>Cardboard prototypes tested for scale and usability.</p>
             </div>
           </li>
           <li class="step-connector">
-            <img src="mushrooms.svg" alt="" width="28" height="28">
           </li>
           <li class="step-item">
             <div class="step-image-wrapper">
@@ -161,7 +166,6 @@
               <ul class="card-list">
                 <li>From observations to final render</li>
                 <li>Material swatch testing</li>
-                <li>User testing with preschoolers</li>
               </ul>
               <a href="process.html" class="card-link">View Process →</a>
             </div>
@@ -208,10 +212,6 @@
             <p>This thesis asks how modular, gender-neutral playsets can address the limitations of current pretend-play furniture in preschool and therapy settings.</p>
           </details>
           <details class="faq-item">
-            <summary>Who were the research participants?</summary>
-            <p>Observations were conducted at three preschool sites, with interviews from 8 educators, 2 pediatric therapists, and user testing with 20+ children ages 3–5.</p>
-          </details>
-          <details class="faq-item">
             <summary>What materials were chosen?</summary>
             <p>Natural birch plywood, canvas, silicone, and nontoxic ABS plastic were selected for durability, sensory feedback, and ASTM F963 compliance.</p>
           </details>
@@ -226,7 +226,7 @@
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <p>&copy; 2024 Honors Thesis. All rights reserved.</p>
+      <p>&copy; 2026 Honors Thesis. All rights reserved.</p>
       <div class="footer-links">
         <a href="home.html">Home</a>
         <a href="thesis.html">Thesis</a>
@@ -235,6 +235,18 @@
       </div>
     </div>
   </footer>
+  <script>
+    (function() {
+      const loader = document.getElementById('loading-screen');
+      document.body.classList.add('loading');
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          loader.classList.add('hidden');
+          document.body.classList.remove('loading');
+        }, 2200);
+      });
+    })();
+  </script>
 </body>
 </html>
 

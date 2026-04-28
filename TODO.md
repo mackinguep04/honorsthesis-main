@@ -5,7 +5,7 @@
 ### Status: Changes undone — all files reverted to original state
 
 ### Steps:
-- [ ] 1. Update home.html + home.css with SVG decorations
+- [x] 1. Update home.html + home.css with SVG decorations
 - [ ] 2. Update thesis.html + thesis.css with SVG decorations and icon replacements
 - [ ] 3. Update process.html + process.css with SVG decorations
 - [ ] 4. Update research.html + research.css with SVG decorations and icon replacements
