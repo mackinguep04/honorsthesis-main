@@ -16,6 +16,7 @@
   --shadow-hover: 0 12px 40px rgba(60, 40, 20, 0.18);
 }
 
+
 /* ===== Reset & Base ===== */
 * {
   margin: 0;
@@ -460,15 +461,28 @@ a {
   display: none;
 }
 
+.step-item:nth-child(odd)::after {
+  content: '';
+  position: absolute;
+  right: -1.25rem;
+  top: 50%;
+  width: 2.5rem;
+  height: 2px;
+  background: var(--sage);
+  opacity: 0.3;
+}
+
 .steps-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin-bottom: 2.5rem;
   list-style: none;
   position: relative;
   z-index: 1;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .step-item {
