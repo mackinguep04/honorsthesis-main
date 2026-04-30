@@ -169,50 +169,65 @@
           <li>Final assembly and quality testing</li>
         </ul>
       </div>
-<div class="step-image-grid production-grid">
-  <div class="grid-row">
-    <div class="grid-item">
-      <img src="seniorprojectpics/0041.jpg" alt="Pieces labeled after CNC production" onclick="openLightbox(this.src)">
-      <div class="grid-item-caption">Pieces labeled after CNC production</div>
-    </div>
-    <div class="grid-item">
-      <img src="seniorprojectpics/0039.jpg" alt="Sewing felt vegetables" onclick="openLightbox(this.src)">
-      <div class="grid-item-caption">Sewing felt vegetables</div>
-    </div>
-    <div class="grid-item">
-      <img src="seniorprojectpics/0021.jpg" alt="Plywood cut from CNC machine" onclick="openLightbox(this.src)">
-      <div class="grid-item-caption">Plywood cut from CNC machine</div>
-    </div>
-    <div class="grid-item">
-      <img src="seniorprojectpics/0005.jpg" alt="Plywood cut from CNC machine" onclick="openLightbox(this.src)">
-      <div class="grid-item-caption">Plywood cut from CNC machine</div>
-    </div>
-    <div class="grid-item">
-      <img src="seniorprojectpics/0062.jpg" alt="Pieces labeled after CNC production" onclick="openLightbox(this.src)">
-      <div class="grid-item-caption">Pieces labeled after CNC production</div>
-    </div>
+<!-- Production Image Carousel -->
+<div class="carousel-container">
+  <button class="carousel-arrow carousel-prev" onclick="moveCarousel(-1)">&#8249;</button>
+  <div class="carousel-track-container">
+    <ul class="carousel-track">
+      <li class="carousel-slide current-slide">
+        <img src="seniorprojectpics/0041.jpg" alt="Pieces labeled after CNC production" onclick="openLightbox(this.src)">
+        <div class="carousel-caption">Pieces labeled after CNC production</div>
+      </li>
+      <li class="carousel-slide">
+        <img src="seniorprojectpics/0039.jpg" alt="Sewing felt vegetables" onclick="openLightbox(this.src)">
+        <div class="carousel-caption">Sewing felt vegetables</div>
+      </li>
+      <li class="carousel-slide">
+        <img src="seniorprojectpics/0021.jpg" alt="Plywood cut from CNC machine" onclick="openLightbox(this.src)">
+        <div class="carousel-caption">Plywood cut from CNC machine</div>
+      </li>
+      <li class="carousel-slide">
+        <img src="seniorprojectpics/0005.jpg" alt="Plywood cut from CNC machine" onclick="openLightbox(this.src)">
+        <div class="carousel-caption">Plywood cut from CNC machine</div>
+      </li>
+      <li class="carousel-slide">
+        <img src="seniorprojectpics/0062.jpg" alt="Pieces labeled after CNC production" onclick="openLightbox(this.src)">
+        <div class="carousel-caption">Pieces labeled after CNC production</div>
+      </li>
+      <li class="carousel-slide">
+        <img src="seniorprojectpics/0066.jpg" alt="Pieces labeled after CNC production" onclick="openLightbox(this.src)">
+        <div class="carousel-caption">Pieces labeled after CNC production</div>
+      </li>
+      <li class="carousel-slide">
+        <img src="seniorprojectpics/0023.jpg" alt="Plywood cut from CNC machine" onclick="openLightbox(this.src)">
+        <div class="carousel-caption">Plywood cut from CNC machine</div>
+      </li>
+      <li class="carousel-slide">
+        <img src="seniorprojectpics/0016.jpg" alt="Plywood cut from CNC machine" onclick="openLightbox(this.src)">
+        <div class="carousel-caption">Plywood cut from CNC machine</div>
+      </li>
+      <li class="carousel-slide">
+        <img src="seniorprojectpics/0027.jpg" alt="Plywood cut from CNC machine" onclick="openLightbox(this.src)">
+        <div class="carousel-caption">Plywood cut from CNC machine</div>
+      </li>
+      <li class="carousel-slide">
+        <img src="seniorprojectpics/0032.jpg" alt="Pieces painted with milk paint" onclick="openLightbox(this.src)">
+        <div class="carousel-caption">Pieces painted with milk paint</div>
+      </li>
+    </ul>
   </div>
-  <div class="grid-row">
-    <div class="grid-item">
-      <img src="seniorprojectpics/0066.jpg" alt="Pieces labeled after CNC production" onclick="openLightbox(this.src)">
-      <div class="grid-item-caption">Pieces labeled after CNC production</div>
-    </div>
-    <div class="grid-item">
-      <img src="seniorprojectpics/0023.jpg" alt="Plywood cut from CNC machine" onclick="openLightbox(this.src)">
-      <div class="grid-item-caption">Plywood cut from CNC machine</div>
-    </div>
-    <div class="grid-item">
-      <img src="seniorprojectpics/0016.jpg" alt="Plywood cut from CNC machine" onclick="openLightbox(this.src)">
-      <div class="grid-item-caption">Plywood cut from CNC machine</div>
-    </div>
-    <div class="grid-item">
-      <img src="seniorprojectpics/0027.jpg" alt="Plywood cut from CNC machine" onclick="openLightbox(this.src)">
-      <div class="grid-item-caption">Plywood cut from CNC machine</div>
-    </div>
-    <div class="grid-item">
-      <img src="seniorprojectpics/0032.jpg" alt="Pieces painted with milk paint" onclick="openLightbox(this.src)">
-      <div class="grid-item-caption">Pieces painted with milk paint</div>
-    </div>
+  <button class="carousel-arrow carousel-next" onclick="moveCarousel(1)">&#8250;</button>
+  <div class="carousel-nav">
+    <button class="carousel-indicator current-slide"></button>
+    <button class="carousel-indicator"></button>
+    <button class="carousel-indicator"></button>
+    <button class="carousel-indicator"></button>
+    <button class="carousel-indicator"></button>
+    <button class="carousel-indicator"></button>
+    <button class="carousel-indicator"></button>
+    <button class="carousel-indicator"></button>
+    <button class="carousel-indicator"></button>
+    <button class="carousel-indicator"></button>
   </div>
 </div>
     </div>
@@ -253,7 +268,7 @@
   </section>
 
   <!-- Gallery -->
-<section class="process-step" style="background-image: url('Asset 4.svg'); background-size: contain; background-position: center; background-repeat: no-repeat; background-color: transparent; border: none; box-shadow: none; border-radius: 0;">\n    <div class="container">
+<section class="process-step">\n    <div class="container">
     <div class="container">
       <div class="section-header">
         <h2>Process Gallery</h2>
@@ -300,7 +315,7 @@
     <img id="lightbox-img" src="" alt="Enlarged view">
   </div>
 
-  <script>
+<script>
     function openLightbox(src) {
       document.getElementById('lightbox-img').src = src;
       document.getElementById('lightbox').style.display = 'flex';
@@ -313,6 +328,40 @@
     document.addEventListener('keydown', function(e) {
       if (e.key === 'Escape') closeLightbox();
     });
+    
+    // Carousel functionality
+    const track = document.querySelector('.carousel-track');
+    const slides = Array.from(track.children);
+    const nextButton = document.querySelector('.carousel-next');
+    const prevButton = document.querySelector('.carousel-prev');
+    const dotsNav = document.querySelector('.carousel-nav');
+    const dots = Array.from(dotsNav.children);
+    
+    let currentIndex = 0;
+    const slideWidth = slides[0].getBoundingClientRect().width;
+    
+    function moveCarousel(direction) {
+      currentIndex += direction;
+      if (currentIndex < 0) currentIndex = slides.length - 1;
+      if (currentIndex >= slides.length) currentIndex = 0;
+      
+      track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+      
+      dots.forEach(dot => dot.classList.remove('current-slide'));
+      dots[currentIndex].classList.add('current-slide');
+    }
+    
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        currentIndex = index;
+        track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+        dots.forEach(d => d.classList.remove('current-slide'));
+        dot.classList.add('current-slide');
+      });
+    });
+    
+    nextButton.addEventListener('click', () => moveCarousel(1));
+    prevButton.addEventListener('click', () => moveCarousel(-1));
   </script>
 </body>
 </html>

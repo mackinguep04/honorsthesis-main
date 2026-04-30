@@ -460,6 +460,7 @@ section {
 
 .step-image-grid.production-grid {
   display: block;
+  width: 100%;
 }
 
 .grid-row {
@@ -467,12 +468,6 @@ section {
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
   margin-bottom: 1rem;
-}
-
-@media (max-width: 768px) {
-  .grid-row {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 .grid-item {
@@ -486,7 +481,8 @@ section {
 }
 
 .production-grid .grid-item {
-  height: 270px;
+  height: auto;
+  min-height: 200px;
 }
 
 .grid-item:hover {
@@ -499,12 +495,6 @@ section {
   height: 200px;
   object-fit: cover;
   display: block;
-}
-
-@media (max-width: 768px) {
-  .grid-row {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 .grid-item-caption {
@@ -756,6 +746,11 @@ footer p {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+  
+  #production .step-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 
   .step-grid.reverse {
     direction: ltr;
@@ -770,9 +765,29 @@ footer p {
     grid-template-columns: 1fr 1fr;
     gap: 0.75rem;
   }
+  
+  /* Production grid responsive - 2 columns on mobile, full width */
+  .grid-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  
+  .production-grid {
+    width: 100%;
+  }
+  
+  .production-grid .grid-item {
+    min-height: 150px;
+  }
 
   .grid-item img {
     height: 140px;
+  }
+  
+  .grid-item-caption {
+    height: auto;
+    padding: 0.75rem;
+    font-size: 0.8rem;
   }
 
   .gallery-grid {
@@ -812,6 +827,21 @@ footer p {
     width: 48px;
     height: 48px;
     font-size: 1.25rem;
+  }
+  
+  /* Production grid - single column on very small screens */
+  .grid-row {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  .production-grid .grid-item {
+    min-height: 120px;
+  }
+  
+  .grid-item-caption {
+    padding: 0.5rem;
+    font-size: 0.75rem;
   }
 }
 
