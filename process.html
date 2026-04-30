@@ -89,37 +89,62 @@
         </ul>
       </div>
 
-      <div class="step-image-grid">
-        <div class="grid-item">
-          <img src="Senior Project Pitch/Slide19.jpg" alt="Early sketchbook page" onclick="openLightbox(this.src)">
-        </div>
-        <div class="grid-item">
-          <img src="Artboard 16.jpg" alt="Early sketchbook page" onclick="openLightbox(this.src)">
-        </div>
-        <div class="grid-item">
-          <img src="Artboard 23.jpg" alt="Form studies and geometry exploration" onclick="openLightbox(this.src)">
-        </div>
-        <div class="grid-item">
-          <img src="Artboard 20.jpg" alt="Mood board with neutral palettes" onclick="openLightbox(this.src)">
-        </div>
-        <div class="grid-item">
-          <img src="Artboard 19.jpg" alt="Connector and hinge concepts" onclick="openLightbox(this.src)">
-        </div>
-        <div class="grid-item">
-          <img src="Senior Project Pitch/Slide20.jpg" alt="Early sketchbook page" onclick="openLightbox(this.src)">
-        </div>
-        <div class="grid-item">
-          <img src="Senior Project Pitch/Slide21.jpg" alt="Early sketchbook page" onclick="openLightbox(this.src)">
-        </div>
-
-                <div class="grid-item">
-          <img src="1777430153335-acbf036d-f89e-4477-8d52-4c9abc4f20fa_1.jpg" alt="Early sketchbook page" onclick="openLightbox(this.src)">
-        </div>
-        <div class="grid-item">
-          <img src="1777430153335-acbf036d-f89e-4477-8d52-4c9abc4f20fa_2.jpg" alt="Early sketchbook page" onclick="openLightbox(this.src)">
-        </div>
-
-      </div>
+<!-- Ideation Image Carousel -->
+<div class="carousel-container ideation-carousel">
+  <button class="carousel-arrow carousel-prev ideation-prev" onclick="moveIdeationCarousel(-1)">&#8249;</button>
+  <div class="carousel-track-container">
+    <ul class="carousel-track ideation-track">
+      <li class="carousel-slide current-slide">
+        <img src="Senior Project Pitch/Slide19.jpg" alt="Early sketchbook page" onclick="openLightbox(this.src)">
+        <div class="carousel-caption">Initial Sketches</div>
+      </li>
+      <li class="carousel-slide">
+        <img src="Artboard 16.jpg" alt="Form exploration" onclick="openLightbox(this.src)">
+        <div class="carousel-caption">Form Studies</div>
+      </li>
+      <li class="carousel-slide">
+        <img src="Artboard 23.jpg" alt="Geometry exploration" onclick="openLightbox(this.src)">
+        <div class="carousel-caption">Geometry Exploration</div>
+      </li>
+      <li class="carousel-slide">
+        <img src="Artboard 20.jpg" alt="Mood board" onclick="openLightbox(this.src)">
+        <div class="carousel-caption">Mood Board - Neutral Palettes</div>
+      </li>
+      <li class="carousel-slide">
+        <img src="Artboard 19.jpg" alt="Connector concepts" onclick="openLightbox(this.src)">
+        <div class="carousel-caption">Connector & Hinge Concepts</div>
+      </li>
+      <li class="carousel-slide">
+        <img src="Senior Project Pitch/Slide20.jpg" alt="Sketch iteration" onclick="openLightbox(this.src)">
+        <div class="carousel-caption">Sketch Iterations</div>
+      </li>
+      <li class="carousel-slide">
+        <img src="Senior Project Pitch/Slide21.jpg" alt="Concept development" onclick="openLightbox(this.src)">
+        <div class="carousel-caption">Concept Development</div>
+      </li>
+      <li class="carousel-slide">
+        <img src="1777430153335-acbf036d-f89e-4477-8d52-4c9abc4f20fa_1.jpg" alt="Concept sketch 1" onclick="openLightbox(this.src)">
+        <div class="carousel-caption">Concept Sketch 1</div>
+      </li>
+      <li class="carousel-slide">
+        <img src="1777430153335-acbf036d-f89e-4477-8d52-4c9abc4f20fa_2.jpg" alt="Concept sketch 2" onclick="openLightbox(this.src)">
+        <div class="carousel-caption">Concept Sketch 2</div>
+      </li>
+    </ul>
+  </div>
+  <button class="carousel-arrow carousel-next ideation-next" onclick="moveIdeationCarousel(1)">&#8250;</button>
+  <div class="carousel-nav ideation-nav">
+    <button class="carousel-indicator current-slide"></button>
+    <button class="carousel-indicator"></button>
+    <button class="carousel-indicator"></button>
+    <button class="carousel-indicator"></button>
+    <button class="carousel-indicator"></button>
+    <button class="carousel-indicator"></button>
+    <button class="carousel-indicator"></button>
+    <button class="carousel-indicator"></button>
+    <button class="carousel-indicator"></button>
+  </div>
+</div>
     </div>
   </section>
 
@@ -360,8 +385,41 @@
       });
     });
     
-    nextButton.addEventListener('click', () => moveCarousel(1));
+nextButton.addEventListener('click', () => moveCarousel(1));
     prevButton.addEventListener('click', () => moveCarousel(-1));
+    
+    // Ideation Carousel functionality
+    const ideationTrack = document.querySelector('.ideation-track');
+    const ideationSlides = Array.from(ideationTrack.children);
+    const ideationNextButton = document.querySelector('.ideation-next');
+    const ideationPrevButton = document.querySelector('.ideation-prev');
+    const ideationDotsNav = document.querySelector('.ideation-nav');
+    const ideationDots = Array.from(ideationDotsNav.children);
+    
+    let ideationIndex = 0;
+    
+    function moveIdeationCarousel(direction) {
+      ideationIndex += direction;
+      if (ideationIndex < 0) ideationIndex = ideationSlides.length - 1;
+      if (ideationIndex >= ideationSlides.length) ideationIndex = 0;
+      
+      ideationTrack.style.transform = 'translateX(-' + (ideationIndex * 100) + '%)';
+      
+      ideationDots.forEach(dot => dot.classList.remove('current-slide'));
+      ideationDots[ideationIndex].classList.add('current-slide');
+    }
+    
+    ideationDots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        ideationIndex = index;
+        ideationTrack.style.transform = 'translateX(-' + (ideationIndex * 100) + '%)';
+        ideationDots.forEach(d => d.classList.remove('current-slide'));
+        dot.classList.add('current-slide');
+      });
+    });
+    
+    ideationNextButton.addEventListener('click', () => moveIdeationCarousel(1));
+    ideationPrevButton.addEventListener('click', () => moveIdeationCarousel(-1));
   </script>
 </body>
 </html>
