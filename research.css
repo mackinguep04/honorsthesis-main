@@ -1056,11 +1056,55 @@ section.footer .container {
 }
 
 .timeline-content {
-  background: var(--white);
+  background: var(--white) !important;
   padding: 1.5rem;
   border-radius: var(--radius);
   box-shadow: var(--shadow-soft);
   transition: all 0.4s ease;
+  border-left: 4px solid var(--sage);
+  overflow: visible !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 10;
+  position: relative;
+  transform: none !important;
+}
+
+.timeline-content p {
+  color: var(--text) !important;
+  font-size: 1rem !important;
+  line-height: 1.8;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.timeline-content h3 {
+  color: var(--wood) !important;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  display: block !important;
+  visibility: visible !important;
+}
+
+.timeline-item {
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
+}
+
+.timeline-item.scroll-animate,
+.timeline-item.visible {
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
+}
+
+.timeline-item.scroll-animate.visible {
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
 }
 
 .timeline-item:hover .timeline-content {
