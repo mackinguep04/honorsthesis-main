@@ -36,3 +36,14 @@
    - fadeInUp (scroll-triggered)
    - cardHover (interactive tilt)
 3. **Update research.html** - Add SVG elements and animation classes
+
+---
+
+# Task: Replace all emojis with SVG files from svg images folder
+
+## Plan
+- [x] 1. Replace emojis in thesis.html with SVG img tags
+- [x] 2. Replace emojis in research.html with SVG img tags
+- [x] 3. Update thesis.css with emoji-svg styles
+- [x] 4. Update research.css with emoji-svg styles
+- [x] 5. Verify no emojis remain in HTML files

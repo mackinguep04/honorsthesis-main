@@ -955,3 +955,32 @@ footer p {
   }
 }
 
+
+/* SVG replacements for emojis */
+.emoji-svg {
+  display: inline-block;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+.card-icon .emoji-svg {
+  width: 70%;
+  height: 70%;
+}
+
+.problem-check .emoji-svg {
+  width: 18px;
+  height: 18px;
+}
+
+.section-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.section-icon .emoji-svg {
+  width: 1.5em;
+  height: 1.5em;
+}
